@@ -1,2 +1,2 @@
 # manifesto
-SemiTO-V Manifesto written in LaTeX
+SemiTO-V Presentation, Rulebook, Manifesto and Roadmap written in LaTeX
