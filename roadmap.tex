@@ -1,0 +1,120 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{First SemiTO-V Annual Roadmap}
+\author{Tan Siret Akıncı}
+\date
+
+\begin{document}
+\maketitle
+\begin{center}
+    \includegraphics[scale=0.7]{semito-v_logo.png}
+\end{center}
+
+\section{Phase 1: Kickstarting the project (May 2025 - October 2025)}
+Start making an RV32 based MCU as first project of the team. Build core competencies and basic infrastructure.
+
+\subsection{Hardware}
+\begin{itemize}
+    \item Select an RV32 core (VexRiscv/PicoRV32/NEORV32)
+    \item Order a good FPGA compatible with open source toolchain and that is popular in RISC-V community (Tang Nano/ECP5/PYNQ)
+    \item Order basic peripherals to test communication (Basic LCD, led, cables, VGA screen etc)
+    \item Order RV32 based MCUs to play with (ESP32C6, Raspberry Pi Pico 2, CH32V003)
+    \item Set up FPGA toolchain (Yosys/nextpnr)
+    \item Run minimal SoC with UART/GPIO and some other interfaces
+    \item Integrate SPI/I2C peripherals
+    \item Implement basic DMA
+\end{itemize}
+
+\subsection{Software}
+\begin{itemize}
+    \item Develop basic bare-metal software (for RV32 MCUs first and then for our processor)
+    \item Create basic drivers (UART, GPIO, basic LCD)
+    \item Test RISC-V toolchain (GCC/LLVM) on already made RV32 MCUs and our own design on FPGA
+\end{itemize}
+
+\subsection{PR}
+\begin{itemize}
+    \item Make posters, t-shirts and other promotional material
+    \item Prepare for recruitment efforts by opening stands around PoliTO main campus
+    \item Research hackathons/competitions that we can partecipate
+    \item Research and apply for events that we can attend where we can see the RISC-V industry first hand (RISC-V Summit Europe, Embedded World)
+    
+\end{itemize}
+
+\section{Phase 2: Core Development (October 2025 - December 2025)}
+Enhance capabilities of our RV32 based MCU.
+
+\subsection{Hardware}
+\begin{itemize}
+    \item Add custom instructions
+    \item Integrate more peripherals
+\end{itemize}
+
+\subsection{Software}
+\begin{itemize}
+    \item Port popular firmware and develop your ones
+    \item Develop more complex drivers
+    \item Optimize compiler flags
+    \item Improve debugging workflow
+\end{itemize}
+
+\subsection{PR}
+\begin{itemize}
+    \item Make posters, t-shirts and other promotional material
+    \item Accelerate recruitment efforts by opening stands around PoliTO main campus, show live software demos running on RV32 MCUs
+    \item Get in contact with RISC-V companies, apply for beta testings of their products and get their advice for the team
+    \item Organize workshops and talks about RISC-V. Invite influential people with companies/organizations to the campus.
+\end{itemize}
+
+\section{Phase 3: Advanced Features (December 2025 - May 2026)}
+Expand functionality
+
+\subsection{Hardware}
+\begin{itemize}
+    \item Further develop peripheral interface (Connect sensors and modules like DAC, connect to WiFi/Buetooth with external MCUs such as ESP32C6)
+    \item Enhance interrupt controller
+    \item Benchmark with other RV32 MCUs such as ESP32C6, ESP32P4 and Pi Pico 2
+\end{itemize}
+
+\subsection{Software}
+\begin{itemize}
+    \item Develop custom SDK
+    \item Contribute to GCC/LLVM compatibility for RV32
+    \item Create demo applications that push the limits of the CPU
+\end{itemize}
+
+\subsection{PR}
+\begin{itemize}
+    \item Research companies in RV32 market, invite their CEOs to give talks in school
+    \item Organize workshops with people from HW and SW departments
+    \item Make posters, t-shirts and other promotional material
+    \item Continue recruitment efforts, put our projects (FPGAs with our designs etc) on table, doing live demos and benchmark tests
+\end{itemize}
+
+\section{Phase 4: Final stage (May 2026 - October 2026)}
+Prepare for next steps
+
+\subsection{Hardware}
+\begin{itemize}
+    \item Finalize RV32 SoC design
+    \item Send it to other student teams by explaining the functionality so they can beta test it in their own projects (PoliTek music circuits, RoboTO robots' brain etc)
+    \item Research RV64 extensions
+\end{itemize}
+
+\subsection{Software}
+\begin{itemize}
+    \item Complete documentation
+    \item Ensure reproducible builds
+    \item Research RV64 ecosystem
+\end{itemize}
+
+\subsection{PR and Team Lead}
+\begin{itemize}
+    \item Research and apply for events that we can attend where we showcase our projects (RISC-V Summit Demo Day, Embedded World, Maker Faire)
+    \item Keep in touch with companies in RV32 market
+    \item Plan Year 2 roadmap and projects by discussing with all active members, very likely inclining to RV64 and Linux for RISC-V ecosystem
+    \item Plan recruitment and role assignment efforts for the next project
+\end{itemize}
+
+\end{document}
